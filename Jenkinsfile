@@ -7,7 +7,7 @@ pipeline {
   stages {
     stage('Test') {
       agent { 
-        kubernates{
+        kubernetes{
           label 'nodejs-app-pod'
           yaml 'nodejs-pod.yaml' 
         }
